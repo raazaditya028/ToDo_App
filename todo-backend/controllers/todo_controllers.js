@@ -1,6 +1,6 @@
 const ToDo = require("../models/todoModel");
 
-// ✅ GET
+
 const getTodos = async (req, res) => {
     try {
         const todos = await ToDo.find();
@@ -10,7 +10,7 @@ const getTodos = async (req, res) => {
     }
 };
 
-// ✅ POST
+
 const addTodo = async (req, res) => {
     try {
         const { title } = req.body;
@@ -24,5 +24,5 @@ const addTodo = async (req, res) => {
     }
 };
 
-// ✅ EXPORT BOTH
+
 module.exports = { getTodos, addTodo };
